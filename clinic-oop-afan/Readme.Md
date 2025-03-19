@@ -1,0 +1,9 @@
+# **Clinic OOP**
+
+Program ini merupakan aplikasi berbasis Java untuk membuat janji temu antara dokter dan pasien. Program terdiri dari empat kelas utama: Patient, Doctor, Appointment, dan Main. Kelas Patient menyimpan informasi pasien seperti nama, gender, dan diagnosis. Kelas Doctor menyimpan data dokter berupa ID, nama, dan spesialisasi. Kelas Appointment merepresentasikan janji temu yang mencatat dokter, pasien, dan waktu janji temu. Kelas Main menjalankan program utama yang mengatur proses input, validasi jadwal, dan pencetakan hasil.
+
+Alur program dimulai dengan membuat objek dokter yang sudah memiliki ID, nama, dan spesialisasi. Selanjutnya, program meminta pengguna memasukkan data pasien, yaitu nama, gender, dan diagnosis. Setelah itu, pengguna diminta memasukkan waktu janji temu dalam format yyyy-MM-dd HH:mm. Program kemudian memeriksa apakah waktu tersebut sudah digunakan menggunakan metode isConflict(). Jika terdapat konflik, program memberi peringatan bahwa jadwal sudah terisi, jika tidak, program melanjutkan proses pembuatan janji temu.
+
+Setelah janji temu berhasil dibuat, program menyimpan data janji temu ke dalam daftar appointments dan menampilkan konfirmasi. Namun, terdapat kesalahan dalam mencetak informasi dokter dan pasien karena langsung mencetak objek. Untuk memperbaikinya, perlu memanggil metode getName() pada objek dokter dan pasien. Selain itu, janji temu yang berhasil dibuat perlu ditambahkan ke dalam daftar menggunakan metode add().
+
+Kesimpulannya, program ini memungkinkan pembuatan janji temu dengan validasi untuk menghindari konflik waktu. Pengguna dapat memasukkan informasi pasien dan waktu janji temu, sementara informasi dokter sudah diinisialisasi di awal. Dengan perbaikan pada pencetakan data dan penyimpanan janji temu, program dapat berfungsi secara optimal untuk mencatat dan menampilkan janji temu dokter dengan pasien.
